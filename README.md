@@ -218,9 +218,11 @@ This collection is released under the **[Creative Commons Attribution 4.0 Intern
 
 ---
 
+Made with ❤️ by **Gearberry**
+
 ## 👤 Developer & Socials
 
-Developed ❤️ by  **Gearberry**. 
+Developed by **Gearberry**. 
 Feel free to connect with me:
 
 - [Telegram](https://t.me/Gearberry)
