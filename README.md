@@ -93,6 +93,58 @@ const majorArcana = [
 
 ---
 
+## 📦 Ready-to-use JSON with descriptions / Готовий JSON з описами
+
+We also provide a complete **`cards.json`** file — perfect for developers.
+
+Також підготували повний **`cards.json`** — зручний файл для розробників з усіма 78 картами.
+
+Each card object contains:
+- `id` and `filename`
+- English and Ukrainian names (`name` / `name_ua`)
+- Arcana type (`arcana`: `major` / `minor`)
+- Number
+- **Full upright & reversed meanings** (`upright` / `upright_en`, `reversed` / `reversed_en`)
+- Element (`element`)
+
+Кожна карта містить:
+- `id` та `filename`
+- назви англійською та українською (`name` / `name_ua`)
+- тип аркану (`arcana`: major / minor)
+- номер
+- **повні описи** прямої та перевернутої позиції (`upright` / `upright_en`, `reversed` / `reversed_en`)
+- елемент (`element`)
+
+**CDN / Direct link:**
+```
+https://cdn.jsdelivr.net/gh/reginanka/tarot-cards@main/cards.json
+```
+
+or
+
+```
+https://raw.githubusercontent.com/reginanka/tarot-cards/main/cards.json
+```
+
+### Usage example / Приклад використання
+
+```js
+const response = await fetch('https://cdn.jsdelivr.net/gh/reginanka/tarot-cards@main/cards.json');
+const cards = await response.json();
+
+// Find a card by id
+const fool = cards.find(c => c.id === 'm00');
+console.log(fool.name_ua);        // Дурень
+console.log(fool.upright);        // український опис
+console.log(fool.upright_en);     // English description
+```
+
+Just fetch the JSON and you get both high-quality images (via CDN) and rich bilingual interpretations — ready for any frontend project.
+
+Просто завантажуєш JSON і маєш і картинки (через CDN), і якісні двомовні тлумачення — готово для будь-якого фронтенд-проєкту.
+
+---
+
 ## 📋 Full Card List / Повний список карт
 
 ### Major Arcana / Старші Аркани
@@ -220,7 +272,7 @@ This collection is released under the **[Creative Commons Attribution 4.0 Intern
 
 ## 👤 Developer & Socials
 
-Developed ❤️ by **Gearberry**. 
+Developed ❤️ by **Gearberry**.  
 Feel free to connect with me:
 
 - [Telegram](https://t.me/Gearberry)
